@@ -5,7 +5,9 @@ import { PlusCircleIcon, SearchIcon } from "lucide-react";
 import React, { useState } from "react";
 import Header from "@/app/(components)/Header";
 import Rating from "@/app/(components)/Rating";
-import CreateProductModal from "./CreateProductModal";
+import dynamic from "next/dynamic";
+// import CreateProductModal from "./CreateProductModal";
+const CreateProductModal = dynamic(() => import("./CreateProductModal"));
 
 type ProductFormData = {
   name: string;

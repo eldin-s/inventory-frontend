@@ -38,7 +38,7 @@ const Inventory = () => {
   if (isError || !products) {
     return (
       <div className="text-center text-red-500 py-4">
-        Failed to fetch products
+        Failed to get products
       </div>
     );
   }

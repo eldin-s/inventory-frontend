@@ -15,6 +15,8 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
+import logo from "../../inventory-logo.svg";
+import Image from "next/image";
 
 interface SidebarLinkProps {
   href: string;
@@ -79,7 +81,9 @@ const Sidebar = () => {
           isSidebarCollabsed ? "px-5" : "px-8"
         }`}
       >
-        <div className="">logo</div>
+        <div className="">
+          <Image src={logo} width={40} height={40} alt="stock" />
+        </div>
         <h1
           className={`${
             isSidebarCollabsed ? "hidden" : "block"
